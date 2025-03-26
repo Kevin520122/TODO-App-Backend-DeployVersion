@@ -60,11 +60,9 @@ connectDB();
 
 // CORS Middleware with flexible configuration
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS ? 
-    process.env.ALLOWED_ORIGINS.split(',') : 
-    ['https://todo-app-digital-factory-git-main-kevinzhaos-projects-c96a4fb1.vercel.app', 'http://localhost:3001'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+    origin: ['https://todo-app-digital-factory.vercel.app', 'http://localhost:3001'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }));
 
 // Body parser middleware
