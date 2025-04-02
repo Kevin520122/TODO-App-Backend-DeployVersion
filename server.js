@@ -60,7 +60,7 @@ connectDB();
 
 // CORS Middleware with flexible configuration
 app.use(cors({
-    origin: ['https://todo-app-digital-factory.vercel.app', 'http://localhost:3001'],
+    origin: ['https://todo-app-digital-factory.vercel.app', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
